@@ -3,10 +3,15 @@ const express = require("express");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const cors = require("cors");
-const connectDb = require("./config/db");
+const connectDB = require("./config/db");
+
+const routes = require("./routes/index");
 
 const app = express();
-connectDb();
+
+(async function db() {
+  await connectDB();
+})();
 
 app.use(helmet());
 app.use(morgan("tiny"));

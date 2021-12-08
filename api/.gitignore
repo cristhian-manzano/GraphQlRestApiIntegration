@@ -13,3 +13,11 @@ jspm_packages/
 .env.test.local
 .env.production.local
 .env.local
+
+
+
+# Vscode
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
