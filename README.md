@@ -1,1 +1,1 @@
-# MerchandisingApp
+# Integration RestApi (Expressjs), Mongoose and GraphQl
